@@ -4,42 +4,29 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Qilandia';
-    src: url('./font/Qilandia.otf') format('truetype');
-}
+    
 body{
     height: 100%;
     width: 100%;
-    background-color: #231F20
-    font-family: 'Qilandia';
+    background-color: #231F20;
+    font-family: Qilandia;
 }
 
- nav {
+
+    nav {
         position: fixed;
         /* background-color: rgb(0, 255, 68); */
         display: flex;
         align-items: flex-start;
         height: 12vh;
-        margin-left: 10%;
-        width: 80%;
+        width: 100%;
+        padding: 2vw 10.4vw;
         justify-content: space-between;
        
-    }
-    #nav-part2 {
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; 
-        gap: 2vw;
-        font-size: 50px;
-        padding: 8px;
-        margin-top: 0.5px; /* Padding around the nav */
-    }
-    #nav-part2 a {
-        color: #f2f2f2; 
-        text-decoration: none; 
-        font-size: 17px; 
+        
     }
     .search-box {
-        margin-top: 30px;
+        margin-top: 20px;
 }
     .search-box input[type="text"] {
         padding: 5px; /* Padding inside the search box */
@@ -47,51 +34,87 @@ body{
         border-radius: 5%;
         rounded: 5px; /* Rounded corners */
         background-color: #231F20; /* Rounded corners */
+        display: inline;
+        position: relative;
+        justify-content: left;
+    }
+    nav img{
+        height: 5rem;
+        width: 10rem;
+        margin-top: -1rem;
+        margin-left: 1rem;
+        align-items: right;
+        display: flex;
+        object-fit: cover;
+     
+    }
+    nav:hover #nav-bottom{
+        height: 100%;
+        bottom: -100%;
+    }
+
+    .nav-part2 {
+        display: flex;
+        gap: 2vw;
+        align-items: flex-start;
+        padding: 1vh 0;
+        position: relative;
+        z-index: 10;
     }
     
-  
-nav img{
-    height: 5rem;
-    width: 10rem;
-    margin-left: 1rem;
-    align-items: right;
-    display: flex;
-    object-fit: cover;
- 
-}
-nav:hover #nav-bottom{
-    height: 100%;
-    bottom: -100%;
-}
-#nav-bottom{
-    height: 21vh;
-   
-    width: 90%;
-    transition: all ease 0.70s;
-    position: absolute;
-    bottom: 0%;
-    border-bottom: 0.7px solid #badeff;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 2vw 18vw;
-    padding-left: 20vw;
-    opacity: 0.9;
+    .nav-part2 h4 {
+        font-size: 1vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2.6vw;
+    }
     
-}
+    .nav-part2 h5 span {
+        margin-bottom: 1vw;
+        font-size: 1vw;
+        /* background-color: red; */
+        display: none;
+        overflow: hidden;
+    }
+    
+    .nav-part2 h5 span {
+        font-size: 0.77vw;
+        font-weight: 400;
+        transform: translateY(25px);
+        display: inline-block;
+    }
+    
+    nav button {
+        background-color: #0BA34E;
+        display: flex;
+        align-items: center;
+        padding: 14px 20px;
+        font-size: 0.85vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 50px;
+        border: none;
+    }
+    
+    nav button svg {
+        height: 0.8vw;
+        margin-left: 1.6vw;
+    }
+    
+    #nav-bottom {
+        width: 79%;
+        height: 0vh;
+        position: absolute;
+        /* background-color: red; */
+        top: 100%;
+        
+        z-index: 9;
+        border-bottom: 1px solid #badeff;
+    }
+    
 
-nav button {
-    background-color: #badeff;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    padding: 14px 20px;
-    font-size: 0.85vw;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 50px;
-    border: none;
-}
+
+    
 #page1{
     height: 100vh;
     width: 100%;
@@ -105,15 +128,17 @@ nav button {
     font-size: 8vw;
     font-weight: 800;
     text-transform: uppercase;
-    font-family: Qilandia;
+    font-family: qilandia;
     line-height: 13vh;
 
 }
+
 #page1 p{
     font-size: 2vw;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 5vh;
+    
 }
 #page1 p span{
     color: #badeff;
@@ -132,4 +157,14 @@ nav button {
     height: 100%;
     width: 100%;
     
+}
+#page3{
+    height: 100%;
+    width: 100%;
+}
+#page3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-behavior: smooth;
 }
