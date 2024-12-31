@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Qilandia';
+    src: url('./font/Qilandia.otf') format('truetype');
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #231F20
+    font-family: 'Qilandia';
+}
+
+ nav {
+        position: fixed;
+        /* background-color: rgb(0, 255, 68); */
+        display: flex;
+        align-items: flex-start;
+        height: 12vh;
+        margin-left: 10%;
+        width: 80%;
+        justify-content: space-between;
+       
+    }
+    #nav-part2 {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        gap: 2vw;
+        font-size: 50px;
+        padding: 8px;
+        margin-top: 0.5px; /* Padding around the nav */
+    }
+    #nav-part2 a {
+        color: #f2f2f2; 
+        text-decoration: none; 
+        font-size: 17px; 
+    }
+    .search-box {
+        margin-top: 30px;
+}
+    .search-box input[type="text"] {
+        padding: 5px; /* Padding inside the search box */
+        border: none; /* Remove border */
+        border-radius: 5%;
+        rounded: 5px; /* Rounded corners */
+        background-color: #231F20; /* Rounded corners */
+    }
+    
+  
+nav img{
+    height: 5rem;
+    width: 10rem;
+    margin-left: 1rem;
+    align-items: right;
+    display: flex;
+    object-fit: cover;
+ 
+}
+nav:hover #nav-bottom{
+    height: 100%;
+    bottom: -100%;
+}
+#nav-bottom{
+    height: 21vh;
+   
+    width: 90%;
+    transition: all ease 0.70s;
+    position: absolute;
+    bottom: 0%;
+    border-bottom: 0.7px solid #badeff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2vw 18vw;
+    padding-left: 20vw;
+    opacity: 0.9;
+    
+}
+
+nav button {
+    background-color: #badeff;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 14px 20px;
+    font-size: 0.85vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #231F20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page1 h1{
+    font-size: 8vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Qilandia;
+    line-height: 13vh;
+
+}
+#page1 p{
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 5vh;
+}
+#page1 p span{
+    color: #badeff;
+    
+    background-color: #231F20;
+    border: 1px solid #badeff;
+    border-radius: 50vw;
+    margin-top: .2rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    padding: .3rem 1.1rem .2rem;
+    display: inline-block;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    
+}
